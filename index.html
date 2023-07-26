@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Assignment</title>
+                    <!-- font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <!-- google font lato -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- tailwind css and daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+      .font-lato{
+            font-family: 'Lato', sans-serif;
+                }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'color-primary': '#15803D',
+              'color-secondary': '#EF4444',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+
+<body class=" font-family: 'Lato', sans-serif; max-w-7xl bg-white">
+           <!-- header part -->
+    <header class="container mx-auto pt-10 pb-500">
+            
+             <!-- nav section -->
+             <nav class="flex justify-around items-center bg-rose-500 p-4 mb-10 rounded-full">
+                <div class="flex gap-3 justify-self-start items-center list-none text-base font-medium text-[#FFF]">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </div>
+                <div>
+                    <div class="flex gap-3 justify-center items-center">
+                        <img src="./images/logo.png" alt="">
+                        <h2 class="text-4xl font-bold text-[#FFF]">Fruit Burst</h2>
+                    </div>
+                </div>
+                <div class="relative">
+                    <input class="w-60 text-base font-normal text-[#12121266] py-2 pl-2 pr-5 rounded-3xl placeholder:text-[#12121266] outline-none bg-white"type="text"  placeholder="Search here">
+                    <i class="icon fa-solid fa-magnifying-glass absolute top-3 left-48 translate-x-2"></i>
+                </div>
+             </nav> 
+                  <!-- banner section -->
+             <div class="container relative">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full ">
+                      <img src="./images/banner1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle items-center">❮</a> 
+                              <!-- example -->
+                      <div class="overlay text-center space-y-5">
+                        <h1 class="text-5xl font-extrabold text-[#FFF]">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-base font-medium text-[#FFF]">We supply highly quality organic products</p>
+                        <button class="btn text-lg font-extrabold text-[#FFF] bg-gradient-to-r from-[#15803D] to-[#EF4444] border-none">Shop Now</button>
+                           </div>
+                         <!-- example -->
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                         </div>
+
+                         <div class=" flex gap-10 justify-center items-center border shadow-stone-200 w-[80%] bg-white px-2 py-4 absolute top-[450px] left-28 rounded-lg">
+                          <div class="flex gap-2 flex-col items-center justify-center">
+                                 <img src="./images/fruit1.png" alt="">
+                                 <p class="text-[#121212CC] text-xl font-medium">Grape</p>
+                          </div>
+                          <div class="flex flex-col items-center justify-center gap-2">
+                                <img src="./images/fruit2.png" alt="">
+                                <p class="text-[#121212CC] text-xl font-medium">Orange</p>
+                          </div>
+                          <div class="flex flex-col items-center justify-center gap-2">
+                                <img src="./images/fruit3.png" alt="">
+                                <p class="text-[#121212CC] text-xl font-medium">Mango</p>
+                          </div>
+                          <div class="flex flex-col items-center justify-center gap-2">
+                                <img src="./images/fruit4.png" alt="">
+                                <p class="text-[#121212CC] text-xl font-medium">Strawberry</p>
+                          </div>
+                          <div class="flex flex-col items-center justify-center gap-2">
+                                <img src="./images/fruit5.png" alt="">
+                                <p class="text-[#121212CC] text-xl font-medium">Fig</p>
+                          </div>
+                    </div>
+
+                        </div> 
+
+                         <div id="slide2" class="carousel-item relative w-full ">
+                      <img src="./images/banner2.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                                  <!-- example -->
+                      <div class="overlay text-center space-y-5">
+                        <h1 class="text-5xl font-extrabold text-indigo-500">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-base font-medium text-fuchsia-500">We supply highly quality organic products</p>
+                        <button class="btn text-lg font-extrabold text-[#FFF] bg-gradient-to-r from-cyan-500 to-blue-500 border-none">Shop Now</button>
+                           </div>
+                         <!-- example -->
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img src="./images/banner3.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                                  <!-- example -->
+                      <div class="overlay text-center space-y-5">
+                        <h1 class="text-5xl font-extrabold text-cyan-400">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-base font-medium text-violet-500">We supply highly quality organic products</p>
+                        <button class="btn text-lg font-extrabold text-[#FFF] bg-gradient-to-r from-sky-500 to-indigo-500 border-none">Shop Now</button>
+                           </div>
+                         <!-- example -->
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img src="./images/banner4.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                                  <!-- example -->
+                      <div class="overlay text-center space-y-5">
+                        <h1 class="text-5xl font-extrabold text-orange-600">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-base font-medium text-cyan-400">We supply highly quality organic products</p>
+                        <button class="btn text-lg font-extrabold text-[#FFF]  bg-gradient-to-r from-violet-500 to-fuchsia-500 border-none">Shop Now</button>
+                           </div>
+                         <!-- example -->
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+              
+
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+            <section></section>
+    </footer>
+
+</body>
+
+</html>
